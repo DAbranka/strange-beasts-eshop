@@ -1,8 +1,6 @@
 <template>
     <div>
-        <p cart>
-            Cart value: {{ cart }}
-        </p>
+        <Cart :cart="cart"/>
     </div>
 </template>
 
