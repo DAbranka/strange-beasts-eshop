@@ -1,6 +1,8 @@
 <template>
     <div>
-        Cart value : {{ cart }}
+        <p font-bold text-3xl>
+            Cart value: {{ cart }}
+        </p>
     </div>
 </template>
 
