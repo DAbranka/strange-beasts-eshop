@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1 >HELLO WORLD</h1>
         <Cart /> 
     </div>
 </template>
@@ -10,5 +9,5 @@
 </script>
 
 <style scoped>
-
+    
 </style>
