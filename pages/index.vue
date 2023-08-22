@@ -1,10 +1,3 @@
-<template>
-    <div>
-        <Products :cart="cart"/>
-        <Product @addToCart="updateCart" />
-    </div>
-</template>
-
 <script setup>
     const { cart } = useCart()
 
@@ -12,6 +5,16 @@
         cart.value += 1
     }
 </script>
+
+<template>
+    <div>
+        <h1>
+            Homepage
+        </h1>
+        <Products :cart="cart"/>
+        <Product @addToCart="updateCart" />
+    </div>
+</template>
 
 <style scoped>
 
