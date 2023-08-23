@@ -4,7 +4,7 @@
 
 <template>
     <header>
-        <Header />
+        <NavBar />
     </header>
     <main>
         <slot />

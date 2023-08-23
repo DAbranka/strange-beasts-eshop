@@ -9,7 +9,8 @@ export default defineConfig({
   rules: [],
   shortcuts: {
     'cart' : '',
-    'btn': 'bg-black text-white p-3 font-bold text-xl uppercase border-none rounded-xl m-3 cursor-pointer'
+    'btn': 'bg-black text-white p-3 font-bold text-xl uppercase border-none rounded-xl m-3 cursor-pointer',
+    'heroTitle': 'text-9xl font-bold text-white',
   },
   theme: {
       colors: {
@@ -17,5 +18,6 @@ export default defineConfig({
         'sec': '',
         'third': '',
         'black': '#0C0C0C',
+        'white': '#F3F3F3',
   }}
 })
