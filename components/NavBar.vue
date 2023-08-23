@@ -3,9 +3,9 @@
 </script>
 
 <template>
-    <div bg-black px-32 py-6 >
+    <div bg-black px-32 py-8 >
 
-        <section flex flex-row justify-between items-center max-w-7xl mx-auto>
+        <section flex flex-row justify-between items-center max-w-7xl mx-auto mt-xl>
 
             <!-- LOGO SECTION -->
             <section >
@@ -22,7 +22,7 @@
         
             </nuxt-link>
 
-        </section>
+            </section>
             <!-- MENU SECTION -->
             <ul list-none flex flex-row text-xl uppercase>
                 <li><nuxt-link to="/">Home</nuxt-link></li>
