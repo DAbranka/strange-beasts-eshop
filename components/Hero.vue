@@ -3,11 +3,11 @@
 </script>
 
 <template>
-    <div bg-green>
-        <section text-white flex flex-row max-w-7xl mx-auto>
+    <div bg-black>
+        <section text-white flex flex-row max-w-7xl h-screen mx-auto>
             
             <!-- LEFT CONTAINER -->
-            <section w-full bg-prime>
+            <section w-full flex items-center >
                 
                 <!-- CONTENT -->
                 <section>
@@ -22,12 +22,8 @@
 
                     <!-- BUTTONS -->
                     <section>
-                        <button btn bg-prime py-2>
-                            Shop Now
-                        </button>
-                        <button btn bg-white text-black py-2 px-3xl>
-                            About
-                        </button>
+                        <nuxt-link to="/products"><button btn bg-prime py-2>Shop Now</button></nuxt-link>
+                        <nuxt-link to="/about"><button btn bg-white text-black py-2 px-3xl>About</button></nuxt-link>
                     </section>
                     <!-- END -->
                 </section>
@@ -42,7 +38,3 @@
         </section>
     </div>
 </template>
-
-<style scoped>
-
-</style>

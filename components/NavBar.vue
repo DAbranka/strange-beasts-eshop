@@ -8,7 +8,7 @@
         <section flex flex-row justify-between items-center max-w-7xl mx-auto>
 
             <!-- LOGO SECTION -->
-            <section>
+            <section >
 
             <nuxt-link to="/" flex flex-row items-center>
 
@@ -18,7 +18,7 @@
             </div>
         
             <!-- LOGO TEXT -->
-            <h1 decoration-none text-white>STRANGE <br> BEASTS</h1>
+            <h1 class="logo" decoration-none text-white>STRANGE <br> BEASTS</h1>
         
             </nuxt-link>
 
@@ -43,7 +43,7 @@
         color: white;
     }
     
-    a:hover {
+    a:hover:not(.logo) {
         color: #F04C61;
         font-style: italic;
     }
