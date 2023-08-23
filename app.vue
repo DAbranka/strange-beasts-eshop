@@ -1,12 +1,11 @@
+<script setup>
+
+</script>
+
 <template>
-  <div>
-    <header>
-      <Header/>
-    </header>
-    <main>
+  <NuxtLayout>
     <NuxtPage />
-    </main>
-  </div>
+  </NuxtLayout>
 </template>
 
 <style>

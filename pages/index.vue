@@ -1,21 +1,15 @@
 <script setup>
-    const { cart } = useCart()
-
-    function updateCart() {
-        cart.value += 1
-    }
+    definePageMeta({
+        layout: 'home-page-layout',
+    })
 </script>
 
 <template>
-    <div>
-        <h1>
-            Homepage
-        </h1>
-        <Products :cart="cart"/>
-        <Product @addToCart="updateCart" />
-    </div>
+    <h1>
+        Main
+    </h1>
 </template>
 
 <style scoped>
-
+    
 </style>
