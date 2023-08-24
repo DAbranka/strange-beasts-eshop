@@ -13,7 +13,7 @@
                 <section>
                     <!-- TITLE -->
                     <article>
-                        <h1 heroTitle>
+                        <h1 heroTitle mt-8xl mb-3xl>
                             Exclusive <br>
                             Stickers
                         </h1>
@@ -30,10 +30,8 @@
             </section>
 
             <!-- RIGHT CONTAINER -->
-            <section w-full bg-blue>
-                <h1>
-                    Image
-                </h1>
+            <section w-full overflow-hidden flex justify-center>
+                <StickersCarousel />
             </section>
         </section>
     </div>
