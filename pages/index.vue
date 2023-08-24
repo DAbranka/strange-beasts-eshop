@@ -9,9 +9,12 @@
         <!-- FEATURES SECTION -->
         <section overflow-hidden>
             <!-- FEATURES TITLE -->
-            <h2 text-21rem uppercase whitespace>
-                Features
-            </h2>
+            <div w-full bg-amber>
+                <h2 text-27rem uppercase whitespace-nowrap>
+                    Features
+                </h2>
+            </div>
+            
             <!-- FEATURES CONTAINER -->
             <section w-full h-screen flex justify-center >
                 <!-- FEATURES CARDS CONTAINER -->
