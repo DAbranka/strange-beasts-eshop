@@ -1,5 +1,4 @@
 <script setup>
-const { heroStickers } = useHeroStickers() 
 </script>
 
 <template>
@@ -7,7 +6,6 @@ const { heroStickers } = useHeroStickers()
         <h1>
             Products Page
         </h1>
-        <StickersCarouselCards :heroStickers="heroStickers"/>
     </div>
 </template>
 

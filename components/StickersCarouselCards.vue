@@ -8,12 +8,12 @@
         <div  overflow-hidden flex >
             <div class="colOne">
                 <div class="stickersColOne" >
-                    <div class="stickers--slide" productCard v-for="s in heroStickers">
+                    <div class="stickers--slide" productCard v-for="s in heroStickers[0]">
                         <img :src="s.image" :alt="s.title">
                     </div>
                 </div>
                 <div class="stickersColTwo" >
-                    <div class="stickers--slide" productCard v-for="s in heroStickers">
+                    <div class="stickers--slide" productCard v-for="s in heroStickers[0]">
                         <img :src="s.image" :alt="s.title">
                     </div>
                 </div>
@@ -21,13 +21,13 @@
             <div class="colTwo">
                 <div class="stickersColOne" >
                     <!-- CONTENT -->
-                    <div class="stickers--slide" productCard v-for="s in heroStickers">
+                    <div class="stickers--slide" productCard v-for="s in heroStickers[1]">
                         <img :src="s.image" :alt="s.title">
                     </div>
                 </div>
                 <div class="stickersColTwo" >
                     <!-- CONTENT -->
-                    <div class="stickers--slide" productCard v-for="s in heroStickers">
+                    <div class="stickers--slide" productCard v-for="s in heroStickers[1]">
                         <img :src="s.image" :alt="s.title">
                     </div>
                 </div>
@@ -63,16 +63,16 @@
     }
 
     .colOne .stickersColOne{
-        animation: slideTopBot 15s linear infinite;
+        animation: slideTopBot 55s linear infinite;
     }
     .colOne .stickersColTwo{
-        animation: slideTopBot 15s linear infinite;
+        animation: slideTopBot 55s linear infinite;
     }
     .colTwo .stickersColOne{
-        animation: slideBotTop 15s linear infinite;
+        animation: slideBotTop 55s linear infinite;
     }
     .colTwo .stickersColTwo{
-        animation: slideBotTop 15s linear infinite;
+        animation: slideBotTop 55s linear infinite;
     }
     
     .stickers--slide{
