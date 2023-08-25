@@ -26,7 +26,7 @@
             <!-- MENU SECTION -->
             <ul list-none flex flex-row text-xl items-center uppercase>
                 <li><nuxt-link to="/">Home</nuxt-link></li>
-                <li><nuxt-link to="/products">Shop</nuxt-link></li>
+                <li><nuxt-link to="/products">Stickers</nuxt-link></li>
                 <li><nuxt-link to="/portfolio">Portfolio</nuxt-link></li>
                 <li><nuxt-link to="/about">About</nuxt-link></li>
                 <li><nuxt-link to="/contact" >Contact</nuxt-link></li>
