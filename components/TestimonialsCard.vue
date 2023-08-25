@@ -4,7 +4,7 @@
 
 <template>
     <div>
-        <article bg-white w-lg p-9 rounded-xl>
+        <article bg-white w-lg rounded-xl>
             <!-- CONTENT -->
             <section w-full h-full flex flex-row items-center>
 

@@ -4,14 +4,14 @@
 </script>
 <template>
     <div class="cards">
-        <div class="slide" flex flex-row>
+        <div class="slide">
             <TestimonialsCard mx-6/>
             <TestimonialsCard mx-6/>
             <TestimonialsCard mx-6/>
             <TestimonialsCard mx-6/>
             <TestimonialsCard mx-6/>
         </div>
-        <div class="slide" flex flex-row>
+        <div class="slide">
             <TestimonialsCard mx-6/>
             <TestimonialsCard mx-6/>
             <TestimonialsCard mx-6/>

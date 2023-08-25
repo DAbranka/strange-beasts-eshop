@@ -11,11 +11,12 @@
 
         <!-- TESTIMONIAL SECTION -->
         <Testimonials />
+
+        <!-- LATEST PRODUCTS SECTION -->
+        <LatestProducts />
     </div>
 </template>
 
 <style scoped>
-    * {
-        margin: 0;
-    }
+    
 </style>

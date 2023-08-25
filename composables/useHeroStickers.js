@@ -3,18 +3,18 @@ export function useHeroStickers(){
     let id = uuidv4
     const heroStickers = ref([
         [
-            {id: id(), title: "Bushy Whispers" ,image: '_nuxt/assets/img/stickers/BW.png'},
-            {id: id(), title: "Tom Nook" ,image: '_nuxt/assets/img/stickers/image20.png'},
-            {id: id(), title: "Magneto X" ,image: '_nuxt/assets/img/stickers/image21.png'},
-            {id: id(), title: "Fight Covid" ,image: '_nuxt/assets/img/stickers/image22.png'},
-            {id: id(), title: "COD Logo" ,image: '_nuxt/assets/img/stickers/image23.png'},
+            {id: id(), title: "Bushy Whispers", price: 11.90 ,image: '_nuxt/assets/img/stickers/BW.png'},
+            {id: id(), title: "Tom Nook", price: 9.50 ,image: '_nuxt/assets/img/stickers/image20.png'},
+            {id: id(), title: "Magneto X", price: 7.16 ,image: '_nuxt/assets/img/stickers/image21.png'},
+            {id: id(), title: "Fight Covid", price: 14.50 ,image: '_nuxt/assets/img/stickers/image22.png'},
+            {id: id(), title: "COD Logo", price: 5.30 ,image: '_nuxt/assets/img/stickers/image23.png'},
         ],
         [
-            {id: id(), title: "Poke Rangers" ,image: '_nuxt/assets/img/stickers/image24.png'},
-            {id: id(), title: "L'Hypnotiseur" ,image: '_nuxt/assets/img/stickers/image25.png'},
-            {id: id(), title: "Chat de grand malheur" ,image: '_nuxt/assets/img/stickers/image26.png'},
-            {id: id(), title: "Cerveau" ,image: '_nuxt/assets/img/stickers/image27.png'},
-            {id: id(), title: "Chat démonique" ,image: '_nuxt/assets/img/stickers/image28.png'},
+            {id: id(), title: "Poke Rangers" , price: 10.50 ,image: '_nuxt/assets/img/stickers/image24.png'},
+            {id: id(), title: "L'Hypnotiseur", price: 6.80 ,image: '_nuxt/assets/img/stickers/image25.png'},
+            {id: id(), title: "Chat de grand malheur", price: 9.80 ,image: '_nuxt/assets/img/stickers/image26.png'},
+            {id: id(), title: "Cerveau", price: 7.50 ,image: '_nuxt/assets/img/stickers/image27.png'},
+            {id: id(), title: "Chat démonique", price: 4.50 ,image: '_nuxt/assets/img/stickers/image28.png'},
         ]
     ])
 
