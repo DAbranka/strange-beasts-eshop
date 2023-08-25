@@ -8,21 +8,20 @@
         <section flex flex-row justify-between items-center max-w-7xl mx-auto mt-xl>
 
             <!-- LOGO SECTION -->
-            <section >
+            <section>
+                <nuxt-link to="/" flex flex-row items-center>
+                
+                    <!-- LOGOT IMG -->
+                    <div w-16 h-16 flex justify-center items-center rounded-2 overflow-hidden mr-3>
+                        <img w-full h-full src="@/assets/img/logo.png" alt="logo/png">
+                    </div>
 
-            <nuxt-link to="/" flex flex-row items-center>
-
-            <!-- LOGOT IMG -->
-            <div w-16 h-16 flex justify-center items-center rounded-2 overflow-hidden mr-3>
-                <img w-full h-full src="@/assets/img/logo.png" alt="logo/png">
-            </div>
-        
-            <!-- LOGO TEXT -->
-            <h1 class="logo" decoration-none text-white>STRANGE <br> BEASTS</h1>
-        
-            </nuxt-link>
-
+                    <!-- LOGO TEXT -->
+                    <h1 class="logo" decoration-none text-white>STRANGE <br> BEASTS</h1>
+                
+                </nuxt-link>
             </section>
+            
             <!-- MENU SECTION -->
             <ul list-none flex flex-row text-xl items-center uppercase>
                 <li><nuxt-link to="/">Home</nuxt-link></li>
@@ -56,10 +55,4 @@
         margin-right: 2rem;
         font-weight: 900;
     }
-
-    
-    
-
-
-
 </style>

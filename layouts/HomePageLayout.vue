@@ -11,7 +11,9 @@
     <main>
         <slot />
     </main>
-    <footer></footer>
+    <footer>
+        <Footer />
+    </footer>
 </template>
 
 <style scoped>
