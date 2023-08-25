@@ -14,6 +14,9 @@
 
         <!-- LATEST PRODUCTS SECTION -->
         <LatestProducts />
+        
+        <!-- FEATURE / ABOUT SECTION -->
+        <FeatureAbout />
     </div>
 </template>
 
