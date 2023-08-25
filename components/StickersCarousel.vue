@@ -9,10 +9,3 @@ const { heroStickers } = useHeroStickers()
         </div>
     </div>
 </template>
-
-<style scoped>
-
-    /* .stickers:hover .stickers-slide{
-        animation-play-state: paused;
-    } */
-</style>
