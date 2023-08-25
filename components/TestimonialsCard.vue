@@ -1,3 +1,7 @@
+<script setup>
+    const photo01 = "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+</script>
+
 <template>
     <div>
         <article bg-white w-lg p-9 rounded-xl>
@@ -7,7 +11,7 @@
                 <!-- IMAGE -->
                 <section w-lg h-32 p-3>
                     <div flex justify-center items-center overflow-hidden w-full h-full >
-                        <img w-full src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="img/png">
+                        <img w-full :src="photo01" alt="img/png">
                     </div>
                 </section>
 
@@ -37,10 +41,6 @@
         </article>
     </div>
 </template>
-
-<script setup>
-
-</script>
 
 <style scoped>
 
