@@ -4,7 +4,9 @@
 
 <template>
     <div>
-
+        <section>
+            <Product />
+        </section>
     </div>
 </template>
 
