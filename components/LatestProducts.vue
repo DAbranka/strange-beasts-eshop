@@ -91,7 +91,7 @@
                         <!-- View Product -->
                         <section class="text-center">
                             <button addCartBtn hover:drop-shadow-xl>
-                                Bur for €{{ stickers[1][2].price }}
+                                Buy for €{{ stickers[1][2].price }}
                             </button>
                         </section>
                     </article>
