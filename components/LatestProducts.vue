@@ -98,6 +98,14 @@
 
                 </section>
             </section>
+
+            <!-- Button -->
+            <section class="text-center mt-24">
+                <nuxt-link to="/products">
+                    <button bg-gray hover:bg-prime text-white border-none text-2xl font-bold py-2 px-6 uppercase rounded-xl cursor-pointer>
+                        View All Products
+                    </button></nuxt-link>
+            </section>
         </section>
     </div>
 </template>
