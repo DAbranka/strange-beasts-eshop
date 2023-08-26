@@ -5,7 +5,7 @@
 <template>
     <div>
         <section >
-            <h3 text-56 uppercase whitespace-nowrap overflow-hidden mt-24>
+            <h3 text-56 font-900 uppercase whitespace-nowrap overflow-hidden mt-24>
                 latest products
             </h3>
 

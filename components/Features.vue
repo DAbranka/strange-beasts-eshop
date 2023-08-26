@@ -6,7 +6,7 @@
     <section overflow-hidden>
             <!-- FEATURES TITLE -->
             <div w-full>
-                <h2 text-27rem uppercase whitespace-nowrap>
+                <h2 text-27rem font-900 uppercase whitespace-nowrap>
                     Features
                 </h2>
             </div>
