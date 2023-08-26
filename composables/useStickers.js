@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
-export function useHeroStickers(){
+export function useStickers(){
     let id = uuidv4
-    const heroStickers = ref([
+    const stickers = ref([
         [
             {id: id(), title: "Bushy Whispers", price: 11.90 ,image: '_nuxt/assets/img/stickers/BW.png'},
             {id: id(), title: "Tom Nook", price: 9.50 ,image: '_nuxt/assets/img/stickers/image20.png'},
@@ -15,8 +15,15 @@ export function useHeroStickers(){
             {id: id(), title: "Chat de grand malheur", price: 9.80 ,image: '_nuxt/assets/img/stickers/image26.png'},
             {id: id(), title: "Cerveau", price: 7.50 ,image: '_nuxt/assets/img/stickers/image27.png'},
             {id: id(), title: "Chat démonique", price: 4.50 ,image: '_nuxt/assets/img/stickers/image28.png'},
+        ],
+        [
+            {id: id(), title: "Pedo Bear Ice Cream", price: 9.80 ,image: '_nuxt/assets/img/stickers/image29.png'},
+            {id: id(), title: "Rondu Puff", price: 6.80 ,image: '_nuxt/assets/img/stickers/image30.png'},
+            {id: id(), title: "Bob L'Eponge", price: 9.80 ,image: '_nuxt/assets/img/stickers/image31.png'},
+            {id: id(), title: "Happy Dead SpongeBob", price: 7.50 ,image: '_nuxt/assets/img/stickers/image32.png'},
+            {id: id(), title: "Arthur Pixel", price: 4.50 ,image: '_nuxt/assets/img/stickers/image33.png'},
         ]
     ])
 
-    return { heroStickers }
+    return { stickers }
 }
