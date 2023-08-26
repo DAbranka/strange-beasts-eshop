@@ -43,7 +43,7 @@
                         <!-- Add to cart -->
                         <section class="text-center">
                             <button addCartBtn hover:drop-shadow-xl>
-                                View Product
+                                Bur for €{{ stickers[1][0].price }}
                             </button>
                         </section>
                     </article>
@@ -67,7 +67,7 @@
                         <!-- View Product -->
                         <section class="text-center">
                             <button addCartBtn hover:drop-shadow-xl>
-                                View Product
+                                Bur for €{{ stickers[0][3].price }}
                             </button>
                         </section>
                     </article>
@@ -91,7 +91,7 @@
                         <!-- View Product -->
                         <section class="text-center">
                             <button addCartBtn hover:drop-shadow-xl>
-                                View Product
+                                Bur for €{{ stickers[1][2].price }}
                             </button>
                         </section>
                     </article>
