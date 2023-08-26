@@ -8,7 +8,6 @@
     <div>
         <!-- FEATURES SECTION -->
         <Features />
-
         <!-- TESTIMONIAL SECTION -->
         <Testimonials />
 

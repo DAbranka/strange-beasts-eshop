@@ -5,14 +5,21 @@
 <template>
     <section overflow-hidden>
             <!-- FEATURES TITLE -->
-            <div w-full>
-                <h2 text-27rem font-900 uppercase whitespace-nowrap>
-                    Features
-                </h2>
+            <div class="title" w-full>
+                <div class="slide">
+                    <p text-27rem font-900 uppercase whitespace-nowrap>
+                        Features• 
+                    </p>
+                </div>
+                <div class="slide">
+                    <p text-27rem font-900 uppercase whitespace-nowrap>
+                        Features• 
+                    </p>
+                </div>
             </div>
             
             <!-- FEATURES CONTAINER -->
-            <section w-full h-3xl flex justify-center >
+            <section w-full h-3xl my-23 flex justify-center >
                 <!-- FEATURES CARDS CONTAINER -->
                 <section w-7xl flex flex-row justify-between items-center>
                     <!-- FEATURE CARD w Text -->
@@ -62,5 +69,24 @@
 </template>
 
 <style scoped>
-
+    .title {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+    .slide {
+        display: flex;
+        flex-direction: row;
+        animation: slide 10s linear infinite;
+    }
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
 </style>

@@ -7,7 +7,7 @@
         <section relative>
             <!-- TITLE -->
             <section w-full h-xl>
-                <section w-full absolute top-50 left-0>
+                <section w-full absolute top-45 left-0>
                     <article>
                         <p uppercase text-56 font-900>
                             About
@@ -26,14 +26,18 @@
             <section overflow-hidden>
 
                 <!-- CONTENU -->
-                <section max-w-7xl flex flex-row mx-auto>
+                <section flex flex-row>
 
                     <!-- LEFT -->
-                    <section w-full h-36rem>
+                    <section w-full h-48rem overflow-hidden flex justify-end items-start>
+
                         <!-- IMG -->
-                        <div top-0 left-0>
-                            <img w-full src="@/assets/img/logo.png" alt="image/png">
-                        </div>
+                        <section>
+                            <div>
+                                <img src="@/assets/img/logo.png" alt="image/png">
+                            </div>
+                        </section>
+
                     </section>
 
                     <!-- RIGHT -->
