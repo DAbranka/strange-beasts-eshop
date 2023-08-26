@@ -3,10 +3,13 @@
 </script>
 
 <template>
-    <div>
-        <h1>
+    <div h-screen flex flex-row items-center justify-center>
+        <h1 text-42>
             About Page
         </h1>
+        <p font-bold>
+            WIP
+        </p>
     </div>
 </template>
 

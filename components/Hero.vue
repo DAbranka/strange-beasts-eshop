@@ -13,7 +13,7 @@
                 <section>
                     <!-- TITLE -->
                     <article>
-                        <h1 class="heroTitle" heroTitle mt-8xl mb-3xl>
+                        <h1 font-900 class="heroTitle" heroTitle mt-8xl mb-3xl>
                             Exclusive <br>
                             <span>Stickers</span>
                         </h1>

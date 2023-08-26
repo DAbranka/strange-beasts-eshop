@@ -7,7 +7,7 @@
 
         <!-- TITLE -->
         <div w-full>
-            <h3 text-56 uppercase>
+            <h3 text-56 uppercase font-900>
                 They say...
             </h3>
         </div>

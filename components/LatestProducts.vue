@@ -5,14 +5,23 @@
 <template>
     <div>
         <section >
-            <h3 text-56 uppercase whitespace-nowrap overflow-hidden mt-24>
-                latest products
-            </h3>
+            <div class="title">
+                <div class="slide">
+                    <h3 text-56 font-900 uppercase whitespace-nowrap overflow-hidden mt-24>
+                        latest products•  
+                    </h3>
+                </div>
+                <div class="slide">
+                    <h3 text-56 font-900 uppercase whitespace-nowrap overflow-hidden mt-24>
+                        latest products• 
+                    </h3>
+                </div>
+            </div>
 
             <!-- PRODUCTS CONTAINER -->
             <section w-full overflow-hidden>
                 <!-- Contenu -->
-                <section mx-auto max-w-7xl my-24 flex flex-row justify-around>
+                <section mx-auto max-w-7xl flex flex-row justify-around>
                     <!-- Card -->
 
                     <article>
@@ -94,5 +103,24 @@
 </template>
 
 <style scoped>
-
+    .title {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    }
+    .slide {
+        display: flex;
+        flex-direction: row;
+        animation: slide 10s linear infinite;
+    }
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
 </style>
