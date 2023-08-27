@@ -1,11 +1,14 @@
 <script setup>
-
+    const { id } = useRoute().params
+    const { products } = useProducts()
 </script>
 
 <template>
     <div>
         <section>
-            <Product />
+            <p>
+                {{ id }}
+            </p>
         </section>
     </div>
 </template>
