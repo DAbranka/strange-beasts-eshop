@@ -1,5 +1,5 @@
 <script setup>
-    const { products } = useProducts()
+    const { products } = defineProps(['products'])
 </script>
 
 <template>

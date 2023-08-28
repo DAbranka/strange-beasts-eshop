@@ -1,6 +1,4 @@
-import { v4 as uuidv4 } from 'uuid'
 export function useProducts(){
-    //  let id = uuidv4
     const products = ref([
             {id: "0", title: "Bushy Whispers", price: 11.90 ,image: '_nuxt/assets/img/stickers/BW.png'},
             {id: "1", title: "Tom Nook", price: 9.50 ,image: '_nuxt/assets/img/stickers/image20.png'},
