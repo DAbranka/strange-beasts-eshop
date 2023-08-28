@@ -16,14 +16,24 @@
 
                 <!-- LEFT SIDE -->
                 <div productCard m-auto>
-                    <img :src="product.image" :alt="product.title" />
+                    <img w-73 :src="product.image" :alt="product.title" />
                 </div>
 
                 <!-- RIGHT  SIDE -->
-                <article>
-                    <h2>{{ product.title }}</h2>
-                    <p>Price: {{ product.price }}</p>
+                <article flex flex-col justify-center>
+
+                    <!-- Details -->
+                    <section mb-9>
+                        <h2 text-6xl font-900 mb-9>{{ product.title }}</h2>
+                        <p text-5xl font-900 >€{{ product.price }}</p>
+                    </section>
+
+                    <!-- Add to cart -->
+                    <div>
+                        <button hover:drop-shadow-xl @click="addToCart(product)" class="addCartBtn">Add to cart</button>
+                    </div>
                 </article>
+                
 
             </div>
 
