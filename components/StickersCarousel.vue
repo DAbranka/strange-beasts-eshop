@@ -1,11 +1,11 @@
 <script setup>
-const { heroStickers } = useHeroStickers()
+const { stickers } = useStickers()
 </script>
 
 <template>
     <div>
         <div flex flex-row>
-            <StickersCarouselCards :heroStickers="heroStickers"/>
+            <StickersCarouselCards :stickers="stickers"/>
         </div>
     </div>
 </template>

@@ -1,5 +1,5 @@
 <script setup>
-    const { heroStickers } = defineProps(['heroStickers'])
+    const { stickers } = defineProps(['stickers'])
 </script>
 
 <template>
@@ -8,12 +8,12 @@
         <div  overflow-hidden flex >
             <div class="colOne">
                 <div class="stickersColOne" >
-                    <div class="stickers--slide" productCard v-for="s in heroStickers[0]">
+                    <div class="stickers--slide" productCard v-for="s in stickers[0]">
                         <img :src="s.image" :alt="s.title">
                     </div>
                 </div>
                 <div class="stickersColTwo" >
-                    <div class="stickers--slide" productCard v-for="s in heroStickers[0]">
+                    <div class="stickers--slide" productCard v-for="s in stickers[0]">
                         <img :src="s.image" :alt="s.title">
                     </div>
                 </div>
@@ -21,13 +21,13 @@
             <div class="colTwo">
                 <div class="stickersColOne" >
                     <!-- CONTENT -->
-                    <div class="stickers--slide" productCard v-for="s in heroStickers[1]">
+                    <div class="stickers--slide" productCard v-for="s in stickers[2]">
                         <img :src="s.image" :alt="s.title">
                     </div>
                 </div>
                 <div class="stickersColTwo" >
                     <!-- CONTENT -->
-                    <div class="stickers--slide" productCard v-for="s in heroStickers[1]">
+                    <div class="stickers--slide" productCard v-for="s in stickers[2]">
                         <img :src="s.image" :alt="s.title">
                     </div>
                 </div>
