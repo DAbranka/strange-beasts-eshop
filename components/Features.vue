@@ -27,7 +27,7 @@
                     <article  w-sm h-2xl flex flex-col justify-around>
                         <!-- IMAGE -->
                         <div flex items-center justify-center overflow-hidden rounded-2xl>
-                            <img src="@/assets/img/features/feature01.png" alt="image/png">	
+                            <img src="@/img/features/feature01.png" alt="image/png">	
                         </div>
                         <!-- TEXT -->
                         <div h-24 py-2 flex items-start>
@@ -40,7 +40,7 @@
                     <article  w-sm h-2xl flex flex-col justify-around>
                         <!-- IMAGE -->
                         <div flex items-center justify-center overflow-hidden rounded-2xl>
-                            <img src="@/assets/img/features/feature02.png" alt="image/png">	
+                            <img src="@/img/features/feature02.png" alt="image/png">	
                         </div>
                         <!-- TEXT -->
                         <div h-24 py-2 flex items-start>
@@ -53,7 +53,7 @@
                     <article  w-sm h-2xl flex flex-col justify-around>
                         <!-- IMAGE -->
                         <div flex items-center justify-center overflow-hidden rounded-2xl>
-                            <img src="@/assets/img/features/feature03.png" alt="image/png">	
+                            <img src="@/img/features/feature03.png" alt="image/png">	
                         </div>
                         <!-- TEXT -->
                         <div h-24 py-2 flex items-start>
