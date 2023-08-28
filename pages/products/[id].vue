@@ -1,3 +1,13 @@
+<script setup>
+    const { id } = useRoute().params
+    const { products } = useProducts()
+    const product = products.value.find((p) => p.id === id)
+    
+    console.log('Route ID:', id)
+    console.log('All Products:', products.value)
+    console.log('Selected Product:', product)
+</script>
+
 <template>
     <div>
         <section>
@@ -11,20 +21,4 @@
             </div>
         </section>
     </div>
-    </template>
-    
-    <script setup>
-        const { id } = useRoute().params
-        const { products } = useProducts()
-
-        
-        console.log('Route ID:', id)
-        console.log('All Products:', products.value)
-
-        const product = products.value.find((p) => p.id === id)
-        console.log('Selected Product:', product)
-    </script>
-
-    <style scoped>
-  /* Vos styles ici */
-    </style>
+</template>
