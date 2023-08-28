@@ -9,13 +9,24 @@
 </script>
 
 <template>
-    <div>
-        <section>
-            <div v-if="product">
-                <h2>{{ product.title }}</h2>
-                <p>Price: {{ product.price }}</p>
-                <img :src="product.image" :alt="product.title" />
+    <div w-full>
+        <section m-auto max-w-7xl>
+
+            <div v-if="product" grid grid-cols-2 gap-10 my-10>
+
+                <!-- LEFT SIDE -->
+                <div productCard m-auto>
+                    <img :src="product.image" :alt="product.title" />
+                </div>
+
+                <!-- RIGHT  SIDE -->
+                <article>
+                    <h2>{{ product.title }}</h2>
+                    <p>Price: {{ product.price }}</p>
+                </article>
+
             </div>
+
             <div v-else>
                 <p>Product not found</p>
             </div>
