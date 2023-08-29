@@ -1,6 +1,5 @@
 <script setup>
     const { cart } = defineProps(['cart'])
-    console.log('NavbarCart:', cart);
 </script>
 
 <template>

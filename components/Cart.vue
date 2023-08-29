@@ -1,6 +1,5 @@
 <script setup>
     const { cart } = defineProps(['cart'])
-    console.log('Cart', cart);
 </script>
 
 <template>

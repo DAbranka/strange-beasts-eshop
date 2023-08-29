@@ -4,6 +4,7 @@
   // * UPDATE CART
   function updateCart(){
     cart.value++
+    console.log('Cart', cart.value);
   }
 
 </script>
