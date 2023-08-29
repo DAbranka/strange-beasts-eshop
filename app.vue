@@ -2,16 +2,16 @@
   const { cart } = useCart()
 
   // * UPDATE CART
-  function updateCart(){
-    cart.value++
-    console.log('Cart', cart.value);
+  function updateCart(product){
+    cart.value.push(product.id)
+    console.log('Product:', product.id);
   }
 
 </script>
 
 <template>
   <NuxtLayout :cart="cart">
-    <NuxtPage @addToCart="updateCart"/>
+    <NuxtPage @addToCart="updateCart($event)"/>
   </NuxtLayout>
 </template>
 

@@ -1,5 +1,5 @@
 export function useCart() {
-    const cart = ref(0)
+    const cart = ref([])
 
     return { cart }
 }

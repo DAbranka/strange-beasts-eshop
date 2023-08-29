@@ -11,8 +11,9 @@
 
     // * ADD TO CART
     const emit = defineEmits(['addToCart'])
-    function addToCart(){
-        emit('addToCart')
+
+    function addToCart(product){
+        emit('addToCart', product)
     }
     
     // console.log('Route ID:', id)
@@ -42,7 +43,7 @@
 
                     <!-- Add to cart -->
                     <div>
-                        <button hover:drop-shadow-xl @click="addToCart" class="addCartBtn">Add to cart</button>
+                        <button hover:drop-shadow-xl @click="addToCart(product)" class="addCartBtn">Add to cart</button>
                     </div>
                 </article>
                 
