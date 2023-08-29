@@ -1,10 +1,18 @@
 <script setup>
+  const { cart } = useCart()
+
+  // * UPDATE CART
+  function updateCart(product){
+    cart.value.push(product.id)
+    console.log('Cart:', cart.value.length);
+    console.log('Product:', product.id);
+  }
 
 </script>
 
 <template>
-  <NuxtLayout>
-    <NuxtPage />
+  <NuxtLayout :cart="cart">
+    <NuxtPage @addToCart="updateCart($event)"/>
   </NuxtLayout>
 </template>
 
@@ -13,5 +21,9 @@
     font-family: roboto;
     margin: 0;
     padding: 0;
+  }
+
+  body {
+    background-color: #F3F3F3;
   }
 </style>

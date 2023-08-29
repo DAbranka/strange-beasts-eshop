@@ -1,5 +1,5 @@
 <script setup>
-
+    const { cart } = defineProps(['cart'])
 </script>
 
 <template>
@@ -29,7 +29,7 @@
                 <li><nuxt-link to="/portfolio">Portfolio</nuxt-link></li>
                 <li><nuxt-link to="/about">About</nuxt-link></li>
                 <li><nuxt-link to="/contact" >Contact</nuxt-link></li>
-                <li><nuxt-link class="cart material-symbols-outlined text-3xl" to="/cart">shopping_basket</nuxt-link></li>
+                <li><nuxt-link to="/cart"><Cart :cart="cart"/></nuxt-link></li>
             </ul>
         </section>
         
