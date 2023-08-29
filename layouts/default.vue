@@ -1,10 +1,10 @@
 <script setup>
-
+    const { cart } = defineProps(['cart'])
 </script>
 
 <template>
     <header>
-        <NavBar />
+        <NavBar :cart="cart"/>
     </header>
     <main>
         <slot />

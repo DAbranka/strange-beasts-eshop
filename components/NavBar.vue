@@ -1,5 +1,6 @@
 <script setup>
-
+    const { cart } = defineProps(['cart'])
+    console.log('NavbarCart:', cart);
 </script>
 
 <template>
@@ -29,7 +30,7 @@
                 <li><nuxt-link to="/portfolio">Portfolio</nuxt-link></li>
                 <li><nuxt-link to="/about">About</nuxt-link></li>
                 <li><nuxt-link to="/contact" >Contact</nuxt-link></li>
-                <li><nuxt-link to="/cart"><Cart /></nuxt-link></li>
+                <li><nuxt-link to="/cart"><Cart :cart="cart"/></nuxt-link></li>
             </ul>
         </section>
         

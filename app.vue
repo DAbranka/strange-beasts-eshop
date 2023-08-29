@@ -1,10 +1,16 @@
 <script setup>
+  const { cart } = useCart()
+
+  // * UPDATE CART
+  function updateCart(){
+    cart.value++
+  }
 
 </script>
 
 <template>
-  <NuxtLayout>
-    <NuxtPage />
+  <NuxtLayout :cart="cart">
+    <NuxtPage @addToCart="updateCart"/>
   </NuxtLayout>
 </template>
 

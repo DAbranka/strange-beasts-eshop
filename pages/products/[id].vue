@@ -1,11 +1,23 @@
 <script setup>
+
+    // * PRODUCT PAGE
     const { id } = useRoute().params
+
+    // * PRODUCTS aray
     const { products } = useProducts()
+
+    // * PRODUCT object in PRODUCTS array
     const product = products.value.find((p) => p.id === id)
+
+    // * ADD TO CART
+    const emit = defineEmits(['addToCart'])
+    function addToCart(){
+        emit('addToCart')
+    }
     
-    console.log('Route ID:', id)
-    console.log('All Products:', products.value)
-    console.log('Selected Product:', product)
+    // console.log('Route ID:', id)
+    // console.log('All Products:', products.value)
+    // console.log('Selected Product:', product)
 </script>
 
 <template>
@@ -15,7 +27,7 @@
             <div v-if="product" grid grid-cols-2 gap-10 my-10>
 
                 <!-- LEFT SIDE -->
-                <div productCard m-auto>
+                <div productCard bg-white m-auto>
                     <img w-73 :src="product.image" :alt="product.title" />
                 </div>
 
@@ -30,7 +42,7 @@
 
                     <!-- Add to cart -->
                     <div>
-                        <button hover:drop-shadow-xl @click="addToCart(product)" class="addCartBtn">Add to cart</button>
+                        <button hover:drop-shadow-xl @click="addToCart" class="addCartBtn">Add to cart</button>
                     </div>
                 </article>
                 
