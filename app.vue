@@ -4,6 +4,7 @@
   // * UPDATE CART
   function updateCart(product){
     cart.value.push(product.id)
+    console.log('Cart:', cart.value.length);
     console.log('Product:', product.id);
   }
 
