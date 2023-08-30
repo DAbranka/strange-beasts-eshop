@@ -1,5 +1,11 @@
 <script setup>
     const { product } = defineProps(['product'])
+
+    // EMIT ADD TO CART
+    const emit = defineEmits(['addToCart'])
+    function addToCart(product) {
+        emit('addToCart', product)
+    }
 </script>
 
 <template>
@@ -15,7 +21,7 @@
             </section>
             <!-- Add to cart -->
             <section class="text-center">
-                <button addCartBtn hover:drop-shadow-xl>
+                <button @click="addToCart(product)" addCartBtn hover:drop-shadow-xl>
                     Buy for €{{ product.price }}
                 </button>
             </section>

@@ -1,5 +1,11 @@
 <script setup>
     const { products } = useProducts()
+
+    // EMIT ADD TO CART
+    const emit = defineEmits(['addToCart'])
+    function addToCart(product) {
+        emit('addToCart', product)
+    }
 </script>
 
 <template>
@@ -28,6 +34,7 @@
                         v-for="(product, index) in products.slice(-3)" 
                         :key="index"
                         :product="product"
+                        @addToCart="addToCart"
                     />
                 </article>
             </section>

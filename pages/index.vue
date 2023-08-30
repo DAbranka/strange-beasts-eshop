@@ -2,6 +2,12 @@
     definePageMeta({
         layout: 'home-page-layout',
     })
+
+    // EMIT ADD TO CART
+    const emit = defineEmits(['addToCart'])
+    function addToCart(product) {
+        emit('addToCart', product)
+    }
 </script>
 
 <template>
@@ -17,7 +23,7 @@
         <Testimonials />
 
         <!-- LATEST PRODUCTS SECTION -->
-        <LatestProducts />
+        <LatestProducts @addToCart="addToCart"/>
         
         <!-- FEATURE / ABOUT SECTION -->
         <FeatureAbout />
