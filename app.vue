@@ -22,9 +22,9 @@
       price: product.price,
       image: product.image
     })
-    
+
     // ! log
-    console.log('Added Products:', addedProducts.value.length ,addedProducts.value);
+    console.log('Added Products:', addedProducts.value.length, addedProducts.value);
   }
 
 </script>

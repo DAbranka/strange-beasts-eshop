@@ -1,6 +1,6 @@
 <script setup>
     const { addedProducts } = defineProps(['addedProducts'])
-    console.log('Added Products List', addedProducts.value);
+    console.log('Added Products List:', addedProducts);
 </script>
 
 <template>
@@ -13,15 +13,13 @@
             </div>
             <div>
                 <section>
-                    <p>
-                        Product: {{ addedProducts.id }}
+                    <p v-for="product in addedProducts" :key="product.id">
+                        Product ID: {{ product.id }}
+                        Product Title: {{ product.title }}
+                        Product Price: {{ product.price }}
                     </p>
                 </section>
             </div>
         </section>
     </div>
 </template>
-
-<style scoped>
-
-</style>
