@@ -6,6 +6,11 @@
 
 <template>
     <div>
+        <Head>
+        <Title>STRANGE BEASTS | HOME</Title>
+            <Meta name="description" content="Strange Beasts Homepage" />
+        </Head>
+
         <!-- FEATURES SECTION -->
         <Features />
         <!-- TESTIMONIAL SECTION -->

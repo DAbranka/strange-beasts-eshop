@@ -4,7 +4,7 @@
 
 <template>
     <Head>
-        <Title>MY ESHOP | STICKERS</Title>
+        <Title>STRANGE BEASTS | STICKERS</Title>
         <Meta name="description" content="All the stickers" />
     </Head>
 
