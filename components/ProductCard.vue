@@ -1,5 +1,11 @@
 <script setup>
     const { product } = defineProps(['product'])
+
+    // EMIT ADD TO CART
+    const emit = defineEmits(['addToCart'])
+    function addToCart(product) {
+        emit('addToCart', product)
+    }
 </script>
 
 <template>
@@ -18,11 +24,7 @@
         
         <!-- Add to cart -->
         <section>
-            <button addCartBtn> Buy for €{{product.price}}</button>
+            <button addCartBtn @click="addToCart(product)"> Buy for €{{product.price}}</button>
         </section>
     </div>
 </template>
-
-<style scoped>
-
-</style>
