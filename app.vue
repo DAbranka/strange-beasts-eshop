@@ -31,6 +31,15 @@
     const index = addedProducts.value.indexOf(product)
     cart.value.splice(index, 1)
     addedProducts.value.splice(index, 1)
+
+    // ! log
+    console.log('Cart:', cart.value.length);
+    console.log('Product Removed:', {
+        id: product.id,
+        title: product.title,
+        price: product.price,
+        image: product.image
+      });
   }
 
 </script>
