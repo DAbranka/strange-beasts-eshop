@@ -21,15 +21,17 @@
                 <section>
                     <article v-for="product in addedProducts" :key="product.id">
                         <!-- PRODUCT -->
-                        <section class="product" grid grid-cols-4 gap-10 py-10 items-center>
+                        <section class="product" grid grid-cols-4 py-10 items-center>
                             <!-- IMG -->
                             <div mx-auto>
-                                <img w-36 :src="product.image" alt="">
+                                <img w-36 :src="product.image" :alt="product.title">
                             </div>
                             <!-- TITLE -->
-                            <h2 text-4xl font-900 mx-auto>
-                                {{ product.title }}
-                            </h2>
+                            <section>
+                                <h2 text-4xl font-900 mx-auto>
+                                    {{ product.title }}
+                                </h2>
+                            </section>
                             <!-- PRICE -->
                             <p text-3xl font-500 mx-auto>
                                 €{{ product.price }}
@@ -44,7 +46,7 @@
                             mx-auto
                             w-fit
                             p-3>
-                                <i class="material-symbols-outlined text-10 font-500 text-prime">delete</i>
+                                <i class="material-symbols-outlined text-10 font-500 text-white hover:text-prime">delete</i>
                             </button>
                         </section>
                     </article>
