@@ -21,25 +21,30 @@
                 <section>
                     <article v-for="product in addedProducts" :key="product.id">
                         <!-- PRODUCT -->
-                        <section class="product" p-10 grid grid-cols-3 gap-10 items-center>
+                        <section class="product" grid grid-cols-4 gap-10 py-10 items-center>
                             <!-- IMG -->
-                            <div productCard bg-white mr-10>
-                                <img w-74 :src="product.image" alt="">
+                            <div mx-auto>
+                                <img w-36 :src="product.image" alt="">
                             </div>
-                            <!-- INFOS -->
-                            <article>
-                                <!-- TITLE -->
-                                <h2 text-7xl font-900 mb-10>
-                                    {{ product.title }}
-                                </h2>
-                                <!-- PRICE -->
-                                <p text-5xl>
-                                    €{{ product.price }}
-                                </p>
-                            </article>
+                            <!-- TITLE -->
+                            <h2 text-4xl font-900 mx-auto>
+                                {{ product.title }}
+                            </h2>
+                            <!-- PRICE -->
+                            <p text-3xl font-500 mx-auto>
+                                €{{ product.price }}
+                            </p>
                             <!-- REMOVE BTN -->
-                            <button @click="removeProduct(product)" hover:bg-prime hover:text-white text-5xl font-900 bg-white p-10>
-                                Remove
+                            <button
+                            @click="removeProduct(product)"
+                            cursor-pointer
+                            border-none
+                            bg-black
+                            rounded-xl
+                            mx-auto
+                            w-fit
+                            p-3>
+                                <i class="material-symbols-outlined text-10 font-500 text-prime">delete</i>
                             </button>
                         </section>
                     </article>
