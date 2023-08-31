@@ -13,7 +13,7 @@
 <template>
     <div>
         <Head>
-        <Title>STRANGE BEASTS | HOME</Title>
+        <Title>STRANGE BEASTS</Title>
             <Meta name="description" content="Strange Beasts Homepage" />
         </Head>
 

@@ -27,11 +27,17 @@
     console.log('Added Products:', addedProducts.value.length, addedProducts.value);
   }
 
+  function removeProduct(product){
+    const index = addedProducts.value.indexOf(product)
+    cart.value.splice(index, 1)
+    addedProducts.value.splice(index, 1)
+  }
+
 </script>
 
 <template>
   <NuxtLayout :cart="cart">
-    <NuxtPage @addToCart="updateCart($event)" :addedProducts="addedProducts"/>
+    <NuxtPage @addToCart="updateCart($event)" @removeProduct="removeProduct" :addedProducts="addedProducts"/>
   </NuxtLayout>
 </template>
 
