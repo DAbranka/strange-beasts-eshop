@@ -12,9 +12,11 @@
     <div>
         <article>
             <!-- Image -->
-            <section productCard mb-3>
-                <img w-74 :src="product.image" alt="product.title">
-            </section>
+            <nuxt-link :to="`/products/${product.id}`">
+                <section productCard mb-3>
+                    <img w-74 :src="product.image" alt="product.title">
+                </section> 
+            </nuxt-link>
             <!-- Card Title -->
             <section class="text-center mb-3">
                 <h4 class="text-2xl font-bold uppercase">{{ product.title }}</h4>
