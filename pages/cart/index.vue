@@ -31,6 +31,7 @@
                                 <h2 text-4xl font-900 mx-auto>
                                     {{ product.title }}
                                 </h2>
+                                <IncrementDecrement />
                             </section>
                             <!-- PRICE -->
                             <p text-3xl font-500 mx-auto>
