@@ -7,6 +7,13 @@
     function removeProduct(product){
         emit('removeProduct', product)
     }
+
+    // * UPDATE QUANTITY
+    function updateQuantity(quantity, product){
+        const index = addedProducts.indexOf(product)
+        addedProducts[index].quantity = quantity
+        addedProducts[index].totalePrice = quantity * addedProducts[index].price
+    }
 </script>
 
 <template>
@@ -31,11 +38,13 @@
                                 <h2 text-4xl font-900 mx-auto>
                                     {{ product.title }}
                                 </h2>
-                                <IncrementDecrement />
+                                <IncrementDecrement :addedProducts="addedProducts"
+                                @updateQuantity="updateQuantity($event, product)"
+                                />
                             </section>
                             <!-- PRICE -->
                             <p text-3xl font-500 mx-auto>
-                                €{{ product.price }}
+                                €{{ product.totalePrice }}
                             </p>
                             <!-- REMOVE BTN -->
                             <button
