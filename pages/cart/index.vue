@@ -12,7 +12,12 @@
     function updateQuantity(quantity, product){
         const index = addedProducts.indexOf(product)
         addedProducts[index].quantity = quantity
-        addedProducts[index].totalePrice = quantity * addedProducts[index].price
+    }
+
+    // UPDATE TOTAL PRICE
+    function updateTotalePrice(newTotalPrice, product) {
+        const index = addedProducts.indexOf(product);
+        addedProducts[index].totalePrice = newTotalPrice;
     }
 </script>
 
@@ -40,12 +45,20 @@
                                 </h2>
                                 <IncrementDecrement :addedProducts="addedProducts"
                                 @updateQuantity="updateQuantity($event, product)"
+                                @updateTotalePrice="updateTotalePrice($event, product)"
                                 />
                             </section>
                             <!-- PRICE -->
-                            <p text-3xl font-500 mx-auto>
-                                €{{ product.totalePrice }}
-                            </p>
+                            <div v-if="product.quantity <= 1">
+                                <p text-3xl font-500 mx-auto>
+                                    €{{ product.price }}
+                                </p>
+                            </div>
+                            <div v-else>
+                                <p else text-3xl font-500 mx-auto>
+                                    €{{ product.totalePrice }}
+                                </p>
+                            </div>
                             <!-- REMOVE BTN -->
                             <button
                             @click="removeProduct(product)"

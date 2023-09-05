@@ -1,22 +1,34 @@
 <script setup>
     const { addedProducts } = defineProps(['addedProducts'])
-    console.log('Product Price:', addedProducts.value);
 
     // * AMOUNT OF PRODUCT
     const amount = ref(1)
 
     // * UNIT PRICE
-    const unitPrice = ref(addedProducts[0].price)
-    console.log('Unit Price:', unitPrice.value);
+    const selectedProduct = ref(addedProducts[0])
+    const unitPrice = ref(selectedProduct.value.price)
     
     // * EMIT
     const emit = defineEmits(['updateQuantity'])
+
+    // Function to update the total price
+    function updateTotalePrice() {
+        const totalePrice = amount.value * unitPrice.value;
+        emit('updateQuantity', amount.value);
+        emit('updateTotalePrice', totalePrice);
+    }
+
+    // Function to set the selected product and unit price
+    function setSelectedProduct(product) {
+        selectedProduct.value = product;
+        unitPrice.value = product.price;
+        updateTotalePrice();
+    }
 
     // * INCREMENT  
     function increment(){
         amount.value++
         updateTotalePrice()
-        emit('updateQuantity', amount.value)
     }
 
     // * DECREMENT
@@ -24,17 +36,11 @@
         if(amount.value > 1){
             amount.value--
             updateTotalePrice()
-            emit('updateQuantity', amount.value)
         }
     }
 
-    // * UPDATE TOTALE PRICE
-    function updateTotalePrice(){
-        const totalePrice = amount.value * unitPrice.value
-        emit('updateTotalePrice', totalePrice)
-        console.log('Totale Price:', totalePrice);
-    }
-
+    // Initial setup when the component is mounted
+    setSelectedProduct(addedProducts[0]);
 
 </script>
 
