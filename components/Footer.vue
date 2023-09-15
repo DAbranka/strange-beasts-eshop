@@ -12,7 +12,7 @@
                         <nuxt-link to="/" flex flex-row items-start no-underline>
                             <!-- LOGOT IMG -->
                             <div w-32 h-32 flex justify-center items-center overflow-hidden mr-3>
-                                <img w-full h-full src="@/img/logo.png" alt="logo/png">
+                                <img w-full h-full src="/img/logo.png" alt="logo/png">
                             </div>
                         
                             <!-- LOGO TEXT -->

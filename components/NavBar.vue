@@ -13,7 +13,7 @@
                 
                     <!-- LOGOT IMG -->
                     <div w-16 h-16 flex justify-center items-center rounded-2 overflow-hidden mr-3>
-                        <img w-full h-full src="@/img/logo.png" alt="logo/png">
+                        <img w-full h-full src="/img/logo.png" alt="logo/png">
                     </div>
 
                     <!-- LOGO TEXT -->
