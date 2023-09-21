@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.3.0",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "vercel": "^32.2.3"
   }
 }

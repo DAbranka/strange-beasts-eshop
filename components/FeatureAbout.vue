@@ -34,7 +34,7 @@
                         <!-- IMG -->
                         <section>
                             <div>
-                                <img src="@/img/logo.png" alt="image/png">
+                                <img src="/img/logo.png" alt="image/png">
                             </div>
                         </section>
 
