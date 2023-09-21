@@ -55,7 +55,7 @@
                                 </p>
                             </div>
                             <div v-else>
-                                <p else text-3xl font-500 mx-auto>
+                                <p text-3xl font-500 mx-auto>
                                     €{{ product.totalePrice }}
                                 </p>
                             </div>

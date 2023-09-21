@@ -27,6 +27,7 @@
     console.log('Added Products:', addedProducts.value.length, addedProducts.value);
   }
 
+  // * REMOVE PRODUCT
   function removeProduct(product){
     const index = addedProducts.value.indexOf(product)
     cart.value.splice(index, 1)
