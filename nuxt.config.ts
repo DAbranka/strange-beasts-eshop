@@ -1,9 +1,25 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+
   devtools: { enabled: true },
+
   modules: [
     '@unocss/nuxt',
   ],
+
+  build: {
+    extend(config, { isDev, isClient }) {
+      // Modify the Webpack configuration
+      if (!isDev) {
+        // Disable the fallback for the process module
+        config.resolve.fallback = {
+          ...config.resolve.fallback,
+          "process": false
+        };
+      }
+    }
+  },
+  
   app: {
     head: {
       title: 'STRANGE BEASTS | ESHOP',
