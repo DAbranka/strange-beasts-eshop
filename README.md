@@ -1,6 +1,27 @@
-# Nuxt 3 Minimal Starter
+# strange-beasts-eshop
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+E-commerce shop for Strange Beasts - a unique stickers eshop featuring creative designs and illustrations.
+
+## Technologies Used
+
+### Core Framework
+- **Nuxt 3** - The intuitive Vue framework for building full-stack web applications
+- **Vue 3** - Progressive JavaScript framework (via Nuxt)
+- **TypeScript** - Type-safe JavaScript development
+
+### Styling & UI
+- **UnoCSS** - Instant on-demand atomic CSS engine
+
+### Utilities
+- **VueUse** - Collection of essential Vue Composition Utilities
+- **uuid** - Unique identifier generation
+- **node-fetch-native** - Native fetch API support
+
+### Development Tools
+- **Nuxt DevTools** - Enhanced development experience for Nuxt
+
+### Deployment
+- **Vercel** - Cloud platform for static sites and serverless functions
 
 ## Setup
 
