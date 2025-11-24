@@ -2,6 +2,8 @@
 
 E-commerce shop for Strange Beasts - a unique stickers eshop featuring creative designs and illustrations.
 
+🌐 **Live Site:** [https://strange-beasts-eshop.vercel.app/](https://strange-beasts-eshop.vercel.app/)
+
 ## Technologies Used
 
 ### Core Framework
